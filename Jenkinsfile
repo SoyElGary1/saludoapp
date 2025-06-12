@@ -3,13 +3,13 @@ pipeline {
 
     tools {
         maven 'maven'
-        jdk 'JKD17'
+        jdk 'JDK17'
     }
 
     stages {
         stage('Clonar') {
             steps {
-                git clone 'https://github.com/elgarj/saludoApp.git'
+                git url: 'https://github.com/elgarj/saludoApp.git'
             }
         }
 
