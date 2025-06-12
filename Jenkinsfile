@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clonar') {
             steps {
-                git clone url: 'https://github.com/elgarj/saludoApp.git'
+                git clone 'https://github.com/elgarj/saludoApp.git'
             }
         }
 
